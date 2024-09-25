@@ -1,0 +1,199 @@
+/* Subteam Buttons */
+.body {
+    background-color: #333;
+    
+}
+.about-team {
+    background-color: #333;
+    color: #333;
+    
+
+}
+.subteams {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+    border: #B3A369;
+}
+
+.tab-button {
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-family: "Teko", sans-serif;
+    letter-spacing: .5px;
+    
+    font-weight: 400; /* Adjust font weight */
+    transition: color 0.4s ease;
+    color: rgb(0, 0, 0);
+    background-color: #fefefe;
+    padding: 10px 10px;
+    border-color: #B3A369;
+    cursor: pointer;
+    margin: 0 3px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    flex: 1 1 calc(16% - 20px); 
+}
+.bg {
+	position: fixed;
+    color: #333;
+    background-color: #333;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.about-team {
+    margin-top:0px;
+    background-color: #333; /* Dark grey background */
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    align-content: center;
+    position: relative;
+	
+}
+
+.about-team h2 {
+    font-size: 2em;
+    margin-top:0px;
+    margin-bottom: 10px;
+    font-family: "Teko", sans-serif;
+    letter-spacing: .5px;
+    
+    font-weight: 400; /* Adjust font weight */
+    transition: color 0.4s ease;
+    color: #B3A369;
+}
+
+.tab-button:hover {
+    background-color: #B3A369;
+    color: black;
+}
+
+.tab-content {
+    margin: 20px 0;
+}
+
+/* Leadership Section */
+.leadership-team {
+    font-family: "Rubik", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+    color: #ffffff;
+    max-width: 980px;
+    align-items: center;
+    max-width: 980px;
+	margin: 0 auto;
+	margin-top:10px;
+	padding: 0 20px 20px;
+    
+    
+}
+
+.leader {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    flex: 1 1 calc(20% - 20px); 
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: white;
+
+
+}
+
+
+
+
+.leadership-team h3 {
+    font-size: 1em;
+    color: #ffffff;
+}
+
+.leadership-team h4 {
+    font-family: "Teko", sans-serif;
+    letter-spacing: .5px;
+    color: #ffffff;
+    font-size: 1.4em;
+}
+
+.leader-image {
+    width: 150px;  /* Fixed size for all profiles at full width */
+    height: 150px; /* Height same as width for perfect circle */
+    border-radius: 50%;  /* Creates the circle */
+    object-fit: cover;   /* Ensures the image covers the area without stretching */
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .leadership-team {
+        grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    }
+    .leader-image {
+        width: 100px;  /* Smaller circle on smaller screens */
+        height: 100px;
+    }
+    .tab-button {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        height: 40vh; /* Even smaller height for very small screens */
+    }
+    .leader-image {
+        width: 80px;  /* Even smaller circle for very small screens */
+        height: 80px;
+    }
+    .hero-section.slideshow {
+        height: 40vh; /* Even smaller height for very small screens */
+
+    }
+
+    .text-content h1 {
+        font-size: 8vw; /* Even smaller title */
+    }
+    .members-section h2 {
+        font-size: vw;
+    }
+
+    .tab-button {
+        font-size: 4vw;
+        flex: 1 1 calc(33.33% - 20px); 
+    }
+    .leader h3 {
+        font-size: 4vw;
+    }
+    
+    .leader h4 {
+        
+        font-size: 6vw;
+    }
+    .leadership-team {
+        grid-template-columns: repeat(2, 2fr); 
+        padding: 4px;   
+    /* Responsive Design */
+
+}
+.leader {
+    padding: 0px;
+}
+.leadership-team {
+    padding-top: 15px;
+    margin-top: 15px;
+}
+}
+

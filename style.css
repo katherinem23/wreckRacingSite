@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+/* Custom CSS for logo and navbar */
+/* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 300 to 700 */
+
+
+
+
+    .navbar {
+    background-color: white;
+    border-bottom: 1px solid black;
+  }
+  .navbar-brand img {
+    
+    max-height: 65px;
+    
+  }
+
+  .navbar-nav .nav-link {
+    font-family: "Teko", sans-serif;
+    
+    font-weight: 400; /* Adjust font weight */
+    transition: color 0.4s ease;
+    color: black;
+    font-size: 17pt;
+    margin-left: 20px;
+  }
+  .navbar-nav .nav-link:hover {
+    color: rgb(232, 11, 11); /* Change this to your preferred color */
+  }
+  .navbar-toggler {
+    border-color: rgb(0, 0, 0);
+  }
+  .navbar-toggler-icon {
+    width: 30px; /* Default size of the hamburger menu icon */
+    height: 30px;
+    transition: width 0.3s ease, height 0.3s ease; 
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  .hero {
+    height: 70vh;
+    background-image: url('/assets/818group.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  .content-section {
+    padding: 0;
+  }
+  /* Full-width image container */
+.fwImage {
+    height: 70vh;
+    background-image: url('/assets/818group.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+   /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+
+  
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+/* Translucent overlay */
+.fwImageOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Black with 50% opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Centered text content */
+
+
+
+
+.sectionBreak {
+    height: 5px;
+    background-color: black;
+
+}
+
+  /* Media Queries */
+
+/* For small screens (up to 767px) */
+@media (max-width: 767px) {
+    .navbar-brand img {
+      max-height: 54px; /* Smaller logo for small screens */
+    }
+  
+    .navbar-toggler-icon {
+      width: 25px !important; /* Smaller hamburger icon for small screens */
+      height: 25px !important;
+    }
+  
+    .navbar-nav .nav-link {
+      font-size: 20px; /* Smaller font for small screens */
+    }
+    .hero {
+        height: 50vh;
+    }
+    .fwImage {
+        height: 50vh !important;
+    }
+    
+  }
+  
+  /* For very small screens (up to 576px) */
+  @media (max-width: 576px) {
+    .navbar-brand img {
+      max-height: 35px; /* Even smaller logo for very small screens */
+    }
+  
+    .navbar-toggler-icon {
+      width: 20px !important; /* Even smaller hamburger icon */
+      height: 20px !important;
+    }
+  
+    .navbar-nav .nav-link {
+      font-size: 16px; /* Even smaller font for very small screens */
+    }
+    .hero {
+        height: 30vh;
+    }
+    .fwImage {
+        height: 30vh !important;
+    }
+    
+    
+    
+  }
+
+body {
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Reusable hero section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* Slideshow Hero Section */
+.hero-section.slideshow {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image .2s; /* Smooth transition */
+}
+
+/* Translucent overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Centered text content */
+.text-content {
+    color: white;
+    text-align: center;
+    max-width: 80%; /* Limit width for readability */
+    padding: 20px;
+}
+
+.text-content h1 {
+    font-size: 6vw; /* Large title */
+    margin: 0 0 10px;
+    font-family: "Teko", sans-serif;
+    
+    font-weight: 400; /* Adjust font weight */
+    transition: color 0.4s ease;
+    color: white;
+    
+}
+
+.text-content p {
+    font-size: 3vw; /* Smaller caption */
+    margin: 0;
+}
+
+/* Responsive Design */
+
+/* Smaller screens */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 50vh; /* Reduce the height on smaller screens */
+    }
+    .hero-section.slideshow {
+        height: 50vh; /* Even smaller height for very small screens */
+
+    }
+
+    .text-content h1 {
+        font-size: 5vw; /* Smaller font size for smaller screens */
+    }
+
+    .text-content p {
+        font-size: 3vw;
+    }
+    .member-type {
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 3vw;
+        
+    }
+.members-section {
+    
+    font-size: 3vw;
+
+
+}
+}
+
+/* Very small screens (phones) */
+@media (max-width: 576px) {
+    .hero-section {
+        height: 40vh; /* Even smaller height for very small screens */
+    }
+    .hero-section.slideshow {
+        height: 40vh; /* Even smaller height for very small screens */
+
+    }
+
+    .text-content h1 {
+        font-size: 14vw; /* Even smaller title */
+    }
+    .members-section h2 {
+        font-size: 8vw !important;
+    }
+
+    .text-content p {
+        font-size: 4vw;
+    }
+    /* Responsive Design */
+
+}
+/* Members Section */
+.members-section {
+    background-color: #333; /* Dark grey background */
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.members-section h2 {
+    font-size: 5vw;
+    margin-bottom: 10px;
+    font-family: "Teko", sans-serif;
+    
+    font-weight: 400; /* Adjust font weight */
+    transition: color 0.4s ease;
+    color: white;
+    
+}
+
+.member-details {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.member-type {
+    width: 30%; /* Adjust as needed */
+    text-align: left;
+}
+
+.member-type h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+ 
+
+    letter-spacing: .5px;
+    
+    font-weight: 400; /* Adjust font weight */
+    transition: color 0.4s ease;
+    color: #B3A369;
+}
+
+.member-type p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+#member-blurb {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    
+    /* Adjust font weight */
+    transition: color 0.4s ease;
+    letter-spacing: .6px;
+    color: #B3A369;
+}
+#closing-blurb {
+    font-size: 2em;
+    margin-bottom: 1vw;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    transition: color 0.4s ease;
+    letter-spacing: .6px;
+    
+    color: #B3A369;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .member-type {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+/* Collage Hero Section */
+.collage-hero {
+    width: 100%;
+    /* Adjust to the desired height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    display: flex;
+    width: 100%; /* Make it span the full width of the screen */
+    ; /* Keep height consistent */
+}
+
+.image-container img {
+    width: 33.33%; /* Each image takes up 1/3 of the width */
+    object-fit: cover; /* Make sure the images cover their space without distortion */
+ /* Ensure images are full height */
+    transition: transform 0.3s ease; /* Optional: Add some interaction on hover */
+}
+
+/* Optional hover effect to slightly scale up the images */
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive for smaller screens */
+
+
+  
