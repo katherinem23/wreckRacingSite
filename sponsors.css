@@ -1,0 +1,54 @@
+
+ 
+  
+  /* For screens 768px and below (Mobile devices) */
+  @media (max-width: 608px) {
+
+    .sponsors-container {
+      margin-top:8vh !important;
+    }
+
+
+  }
+  
+
+
+  .sponsors-container {
+
+    margin-top: 11vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    overflow-y: auto;
+    background-image: url("./assets/carBG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  }
+
+  .heading {
+    margin-top: 2rem;
+    color: white;
+    z-index: 15;
+  }
+  .image-container {
+    width: 100%; /* Set the width of the container */
+   /* Optional: Limit the maximum width */
+    margin: 0 auto; /* Optional: Center the container */
+    overflow: hidden; /* Ensure no overflow if needed */
+}
+
+.image-container img {
+    width: 100%; /* Make the image fill the container width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any inline spacing */
+}
+
+#sponsor-text {
+  margin-top: 1vh;
+  padding: 1vh;
+  text-align: center;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+
+}

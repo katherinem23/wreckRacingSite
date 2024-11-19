@@ -1,0 +1,71 @@
+
+/* Set additional styling options for the columns */
+.column {
+float: left;
+}
+
+/* Set width length for the left, right and middle columns */
+.left {
+width: 66.33%;
+padding:.25em;
+}
+
+.middle {
+width: 30.33%;
+padding: .5em;
+}
+
+.right {
+width: 33%;
+padding:.25em;
+}
+.instagram-feed {
+    width:100% !important;
+}
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+ 
+    flex: 1;
+  }
+  .column.right {
+    background-color: blue;
+    height: 100px;
+    margin: 0 !important;
+    flex:2 0 0%;
+  }
+  
+  .column.left{
+    background-color: green;
+    height: 100px;
+  
+    flex:1 0 0%;
+    margin: 0 !important;
+  }
+
+  .block.grid {
+    padding: 5vw;
+    padding-top: 1vw;
+    display: block; 
+    grid-template-columns: 2fr 1fr; 
+     
+    border: 1px solid black; 
+    width: 100% 
+
+  }
+
+
+      .child {
+        margin: 10px; 
+    border: 1px solid red; 
+      }
+  

@@ -1,0 +1,25 @@
+.interactive-home{
+    background-image: url('src/assets/images/empty_room1.jpg');
+  background-size: cover;      /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 20px;
+
+}
+
+.carSVG {
+    position:absolute;
+}
+
+.carSVG.eightOneEight {
+    width: 50vw;       /* Size of the SVG is 10% of the viewport width */
+    height: auto; 
+   top:29vh;
+   left:-vw;
+   
+
+}
+
