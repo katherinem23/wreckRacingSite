@@ -41,5 +41,23 @@
         
         document.getElementById(tabName).style.display = 'block'; // Show selected tab
     }
+
+    
+    
+    function scrollRight() {
+      const container = document.querySelector('.card-container');
+      if (container) {
+        container.scrollLeft += container.offsetWidth; // Scroll right by 200px
+      }
+    }
+    function scrollBack() {
+      const container = document.querySelector('.card-container');
+      if (container) {
+        container.scrollLeft -= container.offsetWidth; // Scroll right by 200px
+      }
+    }
+    
+
+    
     
    

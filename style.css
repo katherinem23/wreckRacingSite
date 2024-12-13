@@ -1,20 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
-/* Custom CSS for logo and navbar */
-/* <uniquifier>: Use a unique and descriptive class name
- <weight>: Use a value from 300 to 700 */
-
-
-
-
-    .navbar {
-    background-color: white;
+.navbar {
+    background-color: rgb(255, 255, 255);
     border-bottom: 1px solid black;
+    box-shadow: #333;
+    padding-left: 5vw !important;
+    padding-right: 5vw !important;
+    position: fixed !important;
+    width: 100vw !important;
+    top: 0;
+    z-index: 1000;
+   
+   
   }
+
+nav {
+  position: fixed;
+  top: 0;
+
+}
+.content-container {
+  margin-top:10vh !important;
+  position: relative;
+}
+.navbar navbar-expand-lg {
+ width: 90vw !important;
+}
+
   .navbar-brand img {
     
-    max-height: 65px;
+    width: 10vw;
+    min-width: 50px;
     
+  }
+
+  h4 {
+    font-size: 1rem !important;
+  }
+  p {
+    font-size: 1em;
   }
 
   .navbar-nav .nav-link {
@@ -23,7 +45,7 @@
     font-weight: 400; /* Adjust font weight */
     transition: color 0.4s ease;
     color: black;
-    font-size: 17pt;
+    font-size: 1.2em;
     margin-left: 20px;
   }
   .navbar-nav .nav-link:hover {
@@ -38,348 +60,111 @@
     transition: width 0.3s ease, height 0.3s ease; 
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
   }
-  .hero {
-    height: 70vh;
-    background-image: url('/assets/818group.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-  }
-  .content-section {
-    padding: 0;
-  }
-  /* Full-width image container */
-.fwImage {
-    height: 70vh;
-    background-image: url('/assets/818group.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    position: relative;
-   /* Replace with your image path */
-    background-size: cover;
-    background-position: center;
 
-  
-    background-size: cover;
-    background-position: center;
+  body {
+    background-color: rgb(255, 255, 255) !important;
+    z-index:0;
+    
+  }
+  .caption {
+    
+    height: auto;
+    width: 58%;
+    margin: 30vh auto;
+    position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+  
+    background-color: #000000;
+}
+.typewriter {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+
 }
 
-/* Translucent overlay */
-.fwImageOverlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+  .content-container {
+    margin-top: 8vh;
+    width: 100vw;
+    background-color: white;
+    margin: 0 auto;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6); /* Black with 50% opacity */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/* Centered text content */
-
-
-
-
-.sectionBreak {
-    height: 5px;
-    background-color: black;
-
-}
-
-  /* Media Queries */
-
-/* For small screens (up to 767px) */
-@media (max-width: 767px) {
-    .navbar-brand img {
-      max-height: 54px; /* Smaller logo for small screens */
-    }
-  
-    .navbar-toggler-icon {
-      width: 25px !important; /* Smaller hamburger icon for small screens */
-      height: 25px !important;
-    }
-  
-    .navbar-nav .nav-link {
-      font-size: 20px; /* Smaller font for small screens */
-    }
-    .hero {
-        height: 50vh;
-    }
-    .fwImage {
-        height: 50vh !important;
-    }
-    
+    padding: 0em;
+    border:#ffffff;
+    border-width: 0px;
+    border-style: solid;
+    z-index: 1;
   }
-  
-  /* For very small screens (up to 576px) */
-  @media (max-width: 576px) {
-    .navbar-brand img {
-      max-height: 35px; /* Even smaller logo for very small screens */
+  @media (max-width: 608px) {
+
+    .content-container {
+      margin-top:8vh !important;
     }
-  
-    .navbar-toggler-icon {
-      width: 20px !important; /* Even smaller hamburger icon */
-      height: 20px !important;
-    }
-  
-    .navbar-nav .nav-link {
-      font-size: 16px; /* Even smaller font for very small screens */
-    }
-    .hero {
-        height: 30vh;
-    }
-    .fwImage {
-        height: 30vh !important;
-    }
-    
-    
-    
+
+
   }
 
-body {
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
+  .block {
+    padding: 5vw;
+    padding-bottom: 0;
+    background-color: white;
+  }
 
-/* Reusable hero section */
-.hero-section {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Full viewport height */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-/* Slideshow Hero Section */
-.hero-section.slideshow {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: background-image .2s; /* Smooth transition */
-}
+  .elfsight-app-f98bcf40-c429-4403-863c-f76056f98fe2 a title{
+    color:transparent !important;
+  }
+  .typewriter {
+  position: absolute;
+  padding: .5em;
+  background-color: rgba(255, 0, 0, 0.4);
+  width:67%;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  }
 
-/* Translucent overlay */
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Centered text content */
-.text-content {
-    color: white;
-    text-align: center;
-    max-width: 80%; /* Limit width for readability */
-    padding: 20px;
-}
-
-.text-content h1 {
-    font-size: 6vw; /* Large title */
-    margin: 0 0 10px;
-    font-family: "Teko", sans-serif;
-    
-    font-weight: 400; /* Adjust font weight */
-    transition: color 0.4s ease;
-    color: white;
-    
-}
-
-.text-content p {
-    font-size: 3vw; /* Smaller caption */
-    margin: 0;
-}
-
-/* Responsive Design */
-
-/* Smaller screens */
-@media (max-width: 768px) {
-    .hero-section {
-        height: 50vh; /* Reduce the height on smaller screens */
-    }
-    .hero-section.slideshow {
-        height: 50vh; /* Even smaller height for very small screens */
-
-    }
-
-    .text-content h1 {
-        font-size: 5vw; /* Smaller font size for smaller screens */
-    }
-
-    .text-content p {
-        font-size: 3vw;
-    }
-    .member-type {
-        width: 100%;
-        margin-bottom: 10px;
-        font-size: 3vw;
-        
-    }
-.members-section {
-    
-    font-size: 3vw;
-
-
-}
-}
-
-/* Very small screens (phones) */
-@media (max-width: 576px) {
-    .hero-section {
-        height: 40vh; /* Even smaller height for very small screens */
-    }
-    .hero-section.slideshow {
-        height: 40vh; /* Even smaller height for very small screens */
-
-    }
-
-    .text-content h1 {
-        font-size: 14vw; /* Even smaller title */
-    }
-    .members-section h2 {
-        font-size: 8vw !important;
-    }
-
-    .text-content p {
-        font-size: 4vw;
-    }
-    /* Responsive Design */
-
-}
-/* Members Section */
-.members-section {
-    background-color: #333; /* Dark grey background */
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.members-section h2 {
-    font-size: 5vw;
-    margin-bottom: 10px;
-    font-family: "Teko", sans-serif;
-    
-    font-weight: 400; /* Adjust font weight */
-    transition: color 0.4s ease;
-    color: white;
-    
-}
-
-.member-details {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-.member-type {
-    width: 30%; /* Adjust as needed */
-    text-align: left;
-}
-
-.member-type h3 {
-    font-size: 2em;
-    margin-bottom: 10px;
-    
-  font-family: "Rubik", sans-serif;
-  font-optical-sizing: auto;
- 
-
-    letter-spacing: .5px;
-    
-    font-weight: 400; /* Adjust font weight */
-    transition: color 0.4s ease;
-    color: #B3A369;
-}
-
-.member-type p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-#member-blurb {
-    font-size: 2em;
-    margin-bottom: 20px;
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    
-    /* Adjust font weight */
-    transition: color 0.4s ease;
-    letter-spacing: .6px;
-    color: #B3A369;
-}
-#closing-blurb {
-    font-size: 2em;
-    margin-bottom: 1vw;
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    transition: color 0.4s ease;
-    letter-spacing: .6px;
-    
-    color: #B3A369;
-}
-/* Responsive Design */
-@media (max-width: 768px) {
-    .member-type {
-        width: 100%;
-        margin-bottom: 30px;
-    }
-}
-
-/* Collage Hero Section */
-.collage-hero {
-    width: 100%;
-    /* Adjust to the desired height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.image-container {
-    display: flex;
-    width: 100%; /* Make it span the full width of the screen */
-    ; /* Keep height consistent */
-}
-
-.image-container img {
-    width: 33.33%; /* Each image takes up 1/3 of the width */
-    object-fit: cover; /* Make sure the images cover their space without distortion */
- /* Ensure images are full height */
-    transition: transform 0.3s ease; /* Optional: Add some interaction on hover */
-}
-
-/* Optional hover effect to slightly scale up the images */
-.image-container img:hover {
-    transform: scale(1.05);
-}
-
-/* Responsive for smaller screens */
-
-
+  .typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    font-size: 4vw;
+    font-weight: 900;
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
   
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+  #homeHeroImg {
+    width:100%;
+  }
+  .heroContainer {
+    height:fit-content;
+    position: relative;
+  text-align: center;
+  }
+#photos {
+  background-image: url("./assets/carBG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+

@@ -5,18 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wreck Racing</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="team.css">
-  <link rel="stylesheet" href="carCSS.css">
+  <link rel="stylesheet" href="cars.css">
   
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="action.js"></script>
+
  
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <a class="navbar-brand" href="about.html">
-        <img src="/assets/WR Logo.png" alt="Club Logo"href="home.html">
+      <a class="navbar-brand" href="index.html">
+        <img src="./assets/WRLogo.png" alt="Club Logo"href="index.html">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -26,13 +28,14 @@
             <li class="nav-item">
                 <a class="nav-link" href="about.html">ABOUT</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cars.html">CARS</a>
+                
+              </li>
           <li class="nav-item">
-            <a class="nav-link" href="team.html">SUBTEAMS & LEADERSHIP</a>
+            <a class="nav-link" href="org.html">PEOPLE</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="cars.html">CARS</a>
-            
-          </li>
+       
           <li class="nav-item">
             <a class="nav-link" href="sponsors.html">SPONSORS</a>
           </li>
@@ -47,90 +50,109 @@
     </div>
   </nav>
 
-  <div class="about-team">
-    <div class="page">
-      <h2 margin-bottom="20px">Check Out Our Builds</h2>
-					
-	
-			
-			<!-- tabs -->
-			<div class="pcss3t pcss3t-effect-scale pcss3t-theme-1">
-				<input type="radio" name="pcss3t" checked  id="tab1"class="tab-content-first">
-				<label for="tab1">MYSTERY CAR</label>
-				
-				<input type="radio" name="pcss3t" id="tab2" class="tab-content-2">
-				<label for="tab2">TYPE S10</label>
-				
-				<input type="radio" name="pcss3t" id="tab3" class="tab-content-3">
-				<label for="tab3">E28 - BORIS</label>
-				
-				<input type="radio" name="pcss3t" id="tab4" class="tab-content-4">
-				<label for="tab4">INSIGHT</label>
-
-                <input type="radio" name="pcss3t" id="tab5" class="tab-content-5">
-				<label for="tab5">MG MIDGET</label>
-
-                <input type="radio" name="pcss3t" id="tab6" class="tab-content-last">
-				<label for="tab6">MIATA</label>
-				
+<div class = "content-container">  
 
 
 
 
+  <div class="card-container">
+    <div class="card">
+      <div class="card img">
+        <img src="assets/818.svg">
+      </div>
+      <div class="card text">
+        <h2>818zx</h2>
+        <h3>2022-2024</h3>
+        <p>Info about the 818 blah ablahauhiaucheiegsudyfgawgsergser</p>
 
+      </div>
+      
+    </div>
+    <div class="card">
+      <div class="card img">
+        <img src="assets/s10.svg">
+      </div>
+      <div class="card text">
+        <h2>Chevy Type S10</h2>
+        <h3>2021-2022</h3>
+        <p>Info goes here</p>
 
+      </div>
+    </div>
+    <div class="card">
+      <div class="card img">
+        <img src="assets/bmw.svg">
+      </div>
+      <div class="card text">
+        <h2>BMW e28</h2>
+        <h3>2018-2020</h3>
+        <p>Info goes here</p>
 
+      </div>
+    </div>
+    <div class="card">
+      <div class="card img">
+        <img src="assets/insight.svg">
+      </div>
+      <div class="card text">
+        <h2>Insight</h2>
+        <h3>2015-2017</h3>
+        <p>Info goes here</p>
 
+      </div>
+    </div>
+    <div class="card">
+      <div class="card img">
+        <img src="assets/midget.svg">
+      </div>
+      <div class="card text">
+        <h2>MG Midget</h2>
+        <h3>2012-2014</h3>
+        <p>Info goes here</p>
 
+      </div>
+    </div>
+    <div class="card">
+      <div class="card img">
+        <img src="assets/miata.svg">
+      </div>
+      <div class="card text">
+        <h2>'92 Miata</h2>
+        <h3>2009-2011</h3>
+        <p>Info goes here/p>
 
+      </div>
+    </div>
+    <div class="card">
+      <div class="card img">
+        <img src="assets/bmw.svg">
+      </div>
+      <div class="card text">
+        <h2>'84 BMW 325i</h2>
+        <h3>2005-2008</h3>
+        <p>Info  goes here</p>
 
-				<ul>
-					<li class="tab-content tab-content-first typography">
-						<h1>MYSTERY CAR</h1>
-						<h5>Current build</h5>
-                        <p>Engine Integration is responsible for finding a solution to fit the Audi S4's engine into the Conquest body, both physically and electrically. This team must identify and strip the Audi engine of irrelevant subsystems along the CAN bus, and will work with Chassis to develop a new mounting solution so that the Conquest's replacement powertrain can be installed safely and effectively.</p>
-						<!--<p class="text-right"><em>Find out more about Nikola Tesla from <a href="http://en.wikipedia.org/wiki/Nikola_Tesla" target="_blank">Wikipedia</a>.</em></p>-->
-					</li>
-					
-					<li class="tab-content tab-content-2 typography">
-						<h1>19xx Chevrolet S10</h1>
-						<h5>Build years: 2021-2023</h5>
-                        <p>Chassis design is responsible for the designing and manufacturing of all the frame members, including all attachment points. Additionally, the team performs tests and analysis to ensure their designs will be able to withstand the forces induced from the car. </p>
-						</li>
-					
-					<li class="tab-content tab-content-3 typography">
-						<h1>SUSPENSION</h1>
-						<h5>Subteam Lead: First Last</h5>
-                        <p>Suspension/Handling is responsible for researching and designing a custom suspension solution for the car. The team optimizes the geometry of the suspension’s pickup points, as well as fabricates and tests individual components for strength and rigidity to ensure the car handles as predictably as possible. 
-                        </p>						
-					</li>
-					
-					<li class="tab-content tab-content-4 typography">
-						<div class="typography">
-							<h1>BODY/AERO</h1>
-							<h5>Subteam Lead: First Last</h5>
-                            <p>Body/aero is responsible for restoring the body of the car by removing rust, refreshing the paint job, and designing a livery. The team is also responsible for designing and fabricating an aerodynamics package to improve looks, balance, and handling.</p>
-						</div>
-					</li>
-                    <li class="tab-content tab-content-5 typography">
-						<div class="typography">
-							<h1>COOLING</h1>
-							<h5>Subteam Lead: First Last</h5>
-                            <p>Cooling, Fuel Delivery and Vacuum lines is in charge of reverse engineering the Audi’s cooling, fuel, and vacuum systems (hence the name). Without any one of these systems, the engine and drivetrain would not function. Thus, they need to be cost effective, lightweight, and most of all, reliable. This team will also work within the custom chassis design to fabricate mounting solutions for all involved components.</p>
-						</div>
-					</li>
-                    <li class="tab-content tab-content-last typography">
-						<div class="typography">
-							<h1>INTERIOR</h1>
-							<h5>Subteam Lead: First Last</h5>
-                            <p>Interior and Controls is responsible for designing, sourcing, mounting, and testing all of the user-facing devices on the car, such as the steering wheel, gauge cluster, pedals, and other controls. To do so, the team must work with nearly every other subteam to ensure our controls are compatible with their work. In addition, the team is responsible for the fit and finish of the interior, which is vital for our concours score.</p>
-						</div>
-					</li>
-				</ul>
-			</div>
-			<!--/ tabs -->
-		</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card img">
+        <img src="assets/miata.svg">
+      </div>
+      <div class="card text">
+        <h2>'85 Golf GTI</h2>
+        <h3>2004</h3>
+        <p>Info  goes here</p>
 
-   
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="action.js"></script>
+      </div>
+    </div>
+    
+    
+  
+  </div>
+  <button class="scroll-button left" onclick="scrollBack()">&#9664;</button>
+
+  <button class="scroll-button right" onclick="scrollRight()">&#9654;</button>
+
+</div>
+</body>
+</html>

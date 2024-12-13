@@ -1,0 +1,104 @@
+.card-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    background-image: url("./assets/carBgdark.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: auto;
+    position: relative;
+    scroll-behavior: smooth;
+ 
+   
+  
+    .card {
+      flex: 0 0 auto;
+      width: 90vw;
+      margin: 5vw;
+      background-color: transparent;
+      border-color: transparent;
+      z-index: 4;
+    }
+
+    .card.img {
+        margin:auto;
+        border: 1px;
+        border-style: solid;
+        border-color: transparent;
+        
+        background-color: transparent;
+        z-index:5;
+        width: 70%;
+        aspect-ratio: 16 / 9; /* Ensures a square shape for all image containers */
+        display: flex;
+        align-items: center; /* Aligns SVGs to the bottom */
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: -3vh;
+
+        
+        
+        
+        
+        
+    
+    }
+    .card.img img {
+        width: 100%; /* Scales SVGs to fit the width */
+        height: auto;
+        object-fit: contain; /* Ensures SVG remains within the bounds */
+    /* Aligns to the bottom of the .card.img div */
+      }
+    .card.text {
+        margin:auto;
+        padding: 2vw;
+        background-color: white;
+        box-shadow: 2px 2px 2px black;
+
+    }
+  }
+  .card-container::during {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust color and opacity as needed */
+    z-index: 1; /* Ensures the overlay is on top of the background but below other content */
+    pointer-events: none; /* Allows clicks to pass through the overlay */
+  }
+
+  .content-container {
+    overflow: hidden;
+  }
+
+  .scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .scroll-button.left {
+    left: 1rem;
+  }
+  
+  .scroll-button.right {
+    right: 1rem;
+  }
+  
+  .scroll-button:hover {
+    background-color: rgba(189, 55, 55, 0.8);
+  }
